@@ -47,7 +47,6 @@ const Navbar = () => {
       borderRadius="20px"
       color="black"
       shadow="base"
-      id="nav-menu"
     >
       <Box
         as={ScrollLink}

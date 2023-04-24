@@ -7,7 +7,7 @@ import Home from "./pages/Home";
 function App() {
   return (
     <Container maxW='100%' minH='100vh' margin='0px'textAlign='center'bg='gray.900' padding='0px' overflow='hidden' >
-      <Navbar />
+      <Navbar id="nav-menu"/>
       <Home />
 <FooterContact/>
     </Container>
