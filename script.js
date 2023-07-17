@@ -78,6 +78,7 @@
 // }
 
 
+
 const button1 = document.querySelector('#resume-button-1');
 const button2 = document.querySelector('#resume-button-2');
 
@@ -137,6 +138,8 @@ function downloadResume(url, fileName) {
   anchorElement.click();
   document.body.removeChild(anchorElement);
 }
+
+  
 
 
 
