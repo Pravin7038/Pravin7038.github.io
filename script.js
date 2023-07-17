@@ -11,13 +11,7 @@ navLinks.forEach(link => {
     });
 });
 
-const button = document.querySelectorAll('.nav-link.resume');
 
-if (button) {
-  button.scrollIntoView();
-} else {
-  console.error('Button element not found.');
-}
 
 // Open resume in a new tab and download as PDF
 const resumeButtons = document.querySelectorAll('.nav-link.resume');
@@ -39,5 +33,14 @@ function downloadResume(url, fileName) {
     document.body.appendChild(anchorElement);
     anchorElement.click();
     document.body.removeChild(anchorElement);
+}
+
+
+const button = document.querySelectorAll('.nav-link.resume');
+
+if (button) {
+  button.scrollIntoView();
+} else {
+  console.error('Button element not found.');
 }
 
