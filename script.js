@@ -36,11 +36,11 @@ function downloadResume(url, fileName) {
 }
 
 
-const button = document.querySelectorAll('.nav-link.resume');
+// const button = document.querySelectorAll('.nav-link.resume');
 
-if (button) {
-  button.scrollIntoView();
-} else {
-  console.error('Button element not found.');
-}
+// if (button) {
+//   button.scrollIntoView();
+// } else {
+//   console.error('Button element not found.');
+// }
 
