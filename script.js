@@ -41,6 +41,7 @@ navLinks.forEach(link => {
         e.preventDefault();
         const targetId = link.getAttribute('href');
         const targetSection = document.querySelector(targetId);
+        console.log(targetSection);
         if (targetSection) {
             targetSection.scrollIntoView({ behavior: 'smooth' });
         } else {
@@ -55,6 +56,7 @@ resumeButtons.forEach((button) => {
     button.addEventListener('click', (event) => {
         event.preventDefault();
         const resumeURL = button.getAttribute('data-resume');
+        console.log(resumeURL);
         if (resumeURL) {
             const fileName = resumeURL.substring(resumeURL.lastIndexOf('/') + 1);
             downloadResume(resumeURL, fileName);
@@ -74,6 +76,7 @@ function downloadResume(url, fileName) {
     anchorElement.click();
     document.body.removeChild(anchorElement);
 }
+
 
 
 
