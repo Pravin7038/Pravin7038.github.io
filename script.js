@@ -12,9 +12,24 @@ navLinks.forEach(link => {
 });
 
 // Open resume in a new tab and download as PDF
-const resumeLinks = document.querySelectorAll('.nav-link.resume');
-resumeLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        window.open(link.getAttribute('href'), '_blank');
+const resumeButtons = document.querySelectorAll('.nav-link.resume');
+resumeButtons.forEach((button) => {
+    button.addEventListener('click', (event) => {
+        event.preventDefault();
+        const resumeURL = button.getAttribute('data-resume');
+        const fileName = resumeURL.substring(resumeURL.lastIndexOf('/') + 1);
+        downloadResume(resumeURL, fileName);
     });
 });
+
+function downloadResume(url, fileName) {
+    const anchorElement = document.createElement('a');
+    anchorElement.href = url;
+    anchorElement.download = fileName;
+    anchorElement.target = '_blank';
+    anchorElement.style.display = 'none';
+    document.body.appendChild(anchorElement);
+    anchorElement.click();
+    document.body.removeChild(anchorElement);
+}
+
