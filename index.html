@@ -6,22 +6,12 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <style>
-  /* Add your desired styles here */
-
-  /* Navbar styles */
-  /* Add your desired styles here */
-
-  /* Body styles */
-  /* Add your desired styles here */
-
-  /* Body styles */
   body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
   }
 
-  /* Navbar styles */
   #nav-menu {
     background-color: #133b14;
     color: rgb(36, 148, 182);
@@ -51,7 +41,6 @@
     background-color: #12b8bd;
   }
 
-  /* Home section styles */
   #home {
     background-color: #a3aa50;
     padding: 50px;
@@ -63,7 +52,6 @@
     color: #333;
   }
 
-  /* About section styles */
   #about {
     background-color: #a1ba77;
     padding: 50px;
@@ -105,7 +93,6 @@
     background-color: #3E8E41;
   }
 
-  /* Skills section styles */
   #skills {
     background-color: #95a318;
     padding: 50px;
@@ -141,7 +128,7 @@
 
   /* Projects section styles */
   #projects {
-    background-color: #FFFDE7;
+    background-color: #d2c10b;
     padding: 50px;
     text-align: center;
   }
@@ -195,7 +182,7 @@
 
   /* Contact section styles */
   #contact {
-    background-color: #F9FBE7;
+    background-color: #72e0e0;
     padding: 50px;
     text-align: center;
   }
@@ -285,7 +272,7 @@
     text-decoration: none;
     padding: 10px;
     font-weight: bold;
-  
+
   }
 </style>
 
@@ -297,7 +284,8 @@
       <li><a class="nav-link skills" href="#skills">Skills</a></li>
       <li><a class="nav-link projects" href="#projects">Projects</a></li>
       <li><a class="nav-link contact" href="#contact">Contact</a></li>
-      <li><button id="resume-button-1" class="nav-link resume" data-resume="Pravin-Pawar-Resume.pdf">Resume</button></li>
+      <li><button id="resume-button-1" class="nav-link resume" data-resume="Pravin-Pawar-Resume.pdf">Resume</button>
+      </li>
     </ul>
   </nav>
 
@@ -318,6 +306,18 @@
   <section id="skills">
     <h2>Skills</h2>
     <div class="skills-card">
+      <img class="skills-card-img"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png"
+        alt="Skill Image">
+      <p class="skills-card-name">HTML</p>
+    </div>
+    <div class="skills-card">
+      <img class="skills-card-img"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
+        alt="Skill Image">
+      <p class="skills-card-name">CSS</p>
+    </div>
+    <div class="skills-card">
       <img class="skills-card-img" src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
         alt="Skill Image">
       <p class="skills-card-name">React js</p>
@@ -327,6 +327,24 @@
         src="https://w1.pngwing.com/pngs/136/126/png-transparent-javascript-logo-angularjs-nodejs-computer-programming-web-development-computer-software-jquery-yellow.png"
         alt="Skill Image">
       <p class="skills-card-name">Javascript</p>
+    </div>
+    <div class="skills-card">
+      <img class="skills-card-img"
+        src="https://e7.pngegg.com/pngimages/205/650/png-clipart-node-js-javascript-software-developer-express-js-computer-software-node-js-logo-nodejs.png"
+        alt="Skill Image">
+      <p class="skills-card-name">Node Js</p>
+    </div>
+    <div class="skills-card">
+      <img class="skills-card-img"
+        src="https://img.favpng.com/6/2/11/redux-react-javascript-freecodecamp-npm-png-favpng-6F2x50visKuC0trBQ0952Cm1E_t.jpg"
+        alt="Skill Image">
+      <p class="skills-card-name">Redux</p>
+    </div>
+    <div class="skills-card">
+      <img class="skills-card-img"
+        src="https://w7.pngwing.com/pngs/956/695/png-transparent-mongodb-original-wordmark-logo-icon-thumbnail.png"
+        alt="Skill Image">
+      <p class="skills-card-name">MongoDB</p>
     </div>
   </section>
 
@@ -358,28 +376,28 @@
         rel="noopener noreferrer">Project Demo</a>
     </div>
     <div class="project-card">
-      <img src="https://user-images.githubusercontent.com/115461514/221498510-9df35a9c-0406-4010-b004-72d002460102.jpeg"
+      <img src="https://user-images.githubusercontent.com/104064013/238127533-031ccddf-5847-41f3-b295-482e6f0f341e.png"
         alt="Project Image" />
-      <h3 className="project-title">Daily Lifestyle</h3>
-      <p className="project-description">It is an E-commerse website have some functionalities like below:- login signup
-        filter sort single product page multi product page search bar cart page payment page adminpage admindashboard
+      <h3 className="project-title">BeFit.com</h3>
+      <p className="project-description">Welcome to our premier gym website, where fitness meets community. Discover
+        top-notch equipment, expert trainers, and a supportive environment to help you achieve your fitness goals
       </p>
-      <p className="project-tech-stack">Tech Stack Used: HTML, CSS, JavaScript</p>
-      <a className="project-github-link" href="https://github.com/Pravin7038/Daily-Lifestyle" target="_blank"
+      <p className="project-tech-stack">Tech Stack Used: HTML, CSS, JavaScript, React, TypeScript</p>
+      <a className="project-github-link" href="https://github.com/Pravin7038/BeFit.com" target="_blank"
         rel="noopener noreferrer">GitHub Repository</a>
-      <a className="project-deployed-link" href="https://dreamy-fenglisu-427c70.netlify.app" target="_blank"
-        rel="noopener noreferrer">Project Demo</a>
+      <a className="project-deployed-link" href="https://moonlit-spoon-3401-trilochanprasadbh.vercel.app/"
+        target="_blank" rel="noopener noreferrer">Project Demo</a>
     </div>
     <div class="project-card">
-      <img src="Gifts.com.jpg" alt="Project Image" />
-      <h3 className="project-title">Gifts.com</h3>
+      <img src="city-shop.jpg" alt="Project Image" />
+      <h3 className="project-title">City Shop</h3>
       <p className="project-description">It is an E-commerse website have some functionalities like below:- login signup
         filter sort single product page multi product page search bar cart page payment page adminpage admindashboard
       </p>
-      <p className="project-tech-stack">Tech Stack Used: HTML, CSS, JavaScript</p>
-      <a className="project-github-link" href="https://github.com/Pravin7038/Gifts.com" target="_blank"
+      <p className="project-tech-stack">Tech Stack Used: HTML, CSS, JavaScript, React, TypeScript</p>
+      <a className="project-github-link" href="https://github.com/Pravin7038/City-shop" target="_blank"
         rel="noopener noreferrer">GitHub Repository</a>
-      <a className="project-deployed-link" href="https://whimsical-cheesecake-1a2335.netlify.app" target="_blank"
+      <a className="project-deployed-link" href="https://shop-now-eight.vercel.app/" target="_blank"
         rel="noopener noreferrer">Project Demo</a>
     </div>
   </section>
@@ -391,7 +409,7 @@
     <ul>
       <li id="contact-github">GitHub: <a href="https://github.com/Pravin7038" target="_blank"
           rel="noopener noreferrer">Pravin7038</a></li>
-      <li id="contact-linkedin">LinkedIn: <a href="https://www.linkedin.com/in/yourname" target="_blank"
+      <li id="contact-linkedin">LinkedIn: <a href="https://www.linkedin.com/in/pravin-pawar-10279a183/" target="_blank"
           rel="noopener noreferrer">Pravin Pawar</a></li>
       <li id="contact-phone">Phone: 7350199360</li>
       <li id="contact-email">Email: pravin08pawar@example.com</li>
