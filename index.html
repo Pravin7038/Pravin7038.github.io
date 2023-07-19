@@ -3,25 +3,27 @@
 
 <head>
   <title>My Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
   body {
-    font-family:cursive;
+    font-family: cursive;
     margin: 0;
     padding: 0;
     width: "100%";
     height: "100%";
-    
-    background-color: #91cc93;
-
+    background-color: rgb(9, 19, 21);
   }
 
   #nav-menu {
-    background-color: #133b14;
+    background-color: rgb(9, 19, 21);
     color: rgb(36, 148, 182);
     padding: 10px;
     text-align: center;
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    z-index: 10;
   }
 
   #nav-menu ul {
@@ -31,15 +33,18 @@
   }
 
   #nav-menu li {
+    width: 12%;
     display: inline-block;
+    align-content: space-between;
     margin-right: 10px;
   }
 
   #nav-menu li a {
-    color: rgb(192, 236, 236);
+    color: #caf0f8;
     text-decoration: none;
     padding: 5px;
     font-weight: bold;
+    font-size: 20px;
   }
 
   #nav-menu li a:hover {
@@ -47,13 +52,14 @@
   }
 
   #home {
-    background-color: rgb(20, 229, 229);
+    background-color: rgb(6, 24, 28);
     padding: 50px;
     text-align: center;
+    color: #caf0f8;
   }
 
   #home img {
-    /* background-color: #a3aa50; */
+    background-color: #61604f;
     position: relative;
     animation-name: photo;
     animation-duration: 4s;
@@ -72,12 +78,12 @@
 
     50% {
       left: 200px;
-      top: 100px;
+      top: 70px;
     }
 
     75% {
       left: 0px;
-      top: 100px;
+      top: 70px;
     }
 
     100% {
@@ -88,7 +94,7 @@
 
   #home h1 {
     font-size: 36px;
-    color: #333;
+    color: #caf0f8;
 
   }
 
@@ -96,20 +102,21 @@
     /* background-color: #a1ba77; */
     padding: 50px;
     text-align: center;
-    background-color: rgb(20, 229, 229);
+    background-color: rgb(6, 24, 28);
+    border-top: solid rgb(9, 222, 255);
   }
 
   #about h2 {
     font-size: 30px;
-    color: rgb(3, 22, 5);
+    color: #caf0f8;
     margin-bottom: 20px;
     font-weight: bold;
-    
+
   }
 
   #user-detail-intro {
     font-size: 18px;
-    color: rgb(133, 15, 62);
+    color: rgb(47, 208, 218);
     margin-bottom: 20px;
     font-weight: bold;
     text-align: center;
@@ -117,7 +124,7 @@
 
   #user-detail-name {
     font-size: 30px;
-    color: #333;
+    color: #caf0f8;
     margin-bottom: 20px;
     font-weight: bold;
   }
@@ -136,21 +143,22 @@
   }
 
   #skills {
-    background-color: #95a318;
+    background-color: rgb(6, 24, 28);
     padding: 50px;
     text-align: center;
+    border-top: solid rgb(9, 222, 255);
   }
 
   #skills h2 {
     font-size: 30px;
-    color: #333;
+    color: #caf0f8;
     margin-bottom: 20px;
   }
 
   .skills-card {
     display: inline-block;
     width: 200px;
-    background-color: #FFFDE7;
+    background-color: #2d2b05;
     padding: 20px;
     margin: 20px;
     border-radius: 5px;
@@ -165,30 +173,36 @@
 
   .skills-card-name {
     font-size: 16px;
-    color: #333;
+    color: #caf0f8;
   }
 
   /* Projects section styles */
   #projects {
-    background-color: #d2c10b;
+    background-color: rgb(6, 24, 28);
     padding: 50px;
     text-align: center;
+    border-top: solid rgb(9, 222, 255);
   }
 
   #projects h2 {
     font-size: 30px;
-    color: rgb(2, 16, 87);
+    color: #caf0f8;
     margin-bottom: 20px;
   }
 
   .project-card {
     display: inline-block;
     width: 300px;
-    background-color: #F9FBE7;
+    background-color: #000000;
     padding: 20px;
     margin: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #caf0f8;
+  }
+
+  .project-card :hover {
+    cursor: pointer;
 
   }
 
@@ -198,21 +212,27 @@
     border-radius: 5px;
   }
 
+  .project-card img:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
   .project-title {
     font-size: 20px;
-    color: #333;
+    color: #caf0f8;
     margin-bottom: 10px;
   }
 
   .project-description {
     font-size: 16px;
-    color: #777;
+    color: #caf0f8;
     margin-bottom: 10px;
   }
 
   .project-tech-stack {
     font-size: 14px;
-    color: #999;
+    color: #caf0f8;
     margin-bottom: 10px;
   }
 
@@ -220,19 +240,29 @@
   .project-deployed-link {
     display: block;
     margin-bottom: 10px;
+    width: 50px;
+    border-top: solid rgb(9, 222, 255);
   }
+
+  /* .project-github-link img{
+
+    width: 100%;
+    border: solid red;
+  } */
 
   /* Contact section styles */
   #contact {
-    background-color: #0c8a8a;
+    background-color: rgb(6, 24, 28);
     padding: 50px;
     text-align: center;
+    border-top: solid rgb(9, 222, 255);
   }
 
   #contact h2 {
     font-size: 30px;
-    color: rgb(142, 70, 4);
+    color: #caf0f8;
     margin-bottom: 20px;
+
   }
 
   #contact ul {
@@ -242,12 +272,12 @@
 
   #contact li {
     font-size: 16px;
-    color: rgb(50, 3, 46);
+    color: #caf0f8;
     margin-bottom: 10px;
   }
 
   #contact li a {
-    color: rgb(50, 3, 46);
+    color: #caf0f8;
     text-decoration: none;
   }
 
@@ -280,11 +310,12 @@
 
   h1 {
     text-align: center;
+    color: #caf0f8;
   }
 
   .react-activity-calendar {
     display: flex;
-    background-color: #91cc93;
+    background-color: rgb(6, 24, 28);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -301,18 +332,19 @@
   #resume-button-1 {
 
     border: none;
-    color: rgb(192, 236, 236);
+    color: #caf0f8;
     text-decoration: none;
     padding: 5px;
     font-weight: bold;
     cursor: pointer;
+    font-size: 20px;
   }
 
   #resume-button-2 {
 
     border: none;
-    font-size: medium;
-    color: rgb(192, 236, 236);
+    font-size: 24px;
+    color: #caf0f8;
     text-decoration: none;
     padding: 10px;
     font-weight: bold;
@@ -404,9 +436,9 @@
       </p>
       <p className="project-tech-stack">Tech Stack Used: HTML, CSS, JavaScript</p>
       <a className="project-github-link" href="https://github.com/Pravin7038/Daily-Lifestyle" target="_blank"
-        rel="noopener noreferrer">GitHub Repository</a>
+        rel="noopener noreferrer"><i class="fa fa-github" style="font-size:48px;color:red"></i></a>
       <a className="project-deployed-link" href="https://dreamy-fenglisu-427c70.netlify.app" target="_blank"
-        rel="noopener noreferrer">Project Demo</a>
+        rel="noopener noreferrer"><i class="fa fa-play-circle-o" style="font-size:48px;color:red; margin-left: 50px;"></i></a>
     </div>
     <div class="project-card">
       <img src="Gifts.com.jpg" alt="Project Image" />
@@ -416,9 +448,9 @@
       </p>
       <p className="project-tech-stack">Tech Stack Used: HTML, CSS, JavaScript</p>
       <a className="project-github-link" href="https://github.com/Pravin7038/Gifts.com" target="_blank"
-        rel="noopener noreferrer">GitHub Repository</a>
+        rel="noopener noreferrer"><i class="fa fa-github" style="font-size:48px;color:red"></i></a>
       <a className="project-deployed-link" href="https://whimsical-cheesecake-1a2335.netlify.app" target="_blank"
-        rel="noopener noreferrer">Project Demo</a>
+        rel="noopener noreferrer"><i class="fa fa-play-circle-o" style="font-size:48px;color:red; margin-left: 50px;"></i></a>
     </div>
     <div class="project-card">
       <img src="https://user-images.githubusercontent.com/104064013/238127533-031ccddf-5847-41f3-b295-482e6f0f341e.png"
@@ -429,9 +461,9 @@
       </p>
       <p className="project-tech-stack">Tech Stack Used: HTML, CSS, JavaScript, React, TypeScript</p>
       <a className="project-github-link" href="https://github.com/Pravin7038/BeFit.com" target="_blank"
-        rel="noopener noreferrer">GitHub Repository</a>
+        rel="noopener noreferrer"><i class="fa fa-github" style="font-size:48px;color:red"></i></a>
       <a className="project-deployed-link" href="https://moonlit-spoon-3401-trilochanprasadbh.vercel.app/"
-        target="_blank" rel="noopener noreferrer">Project Demo</a>
+        target="_blank" rel="noopener noreferrer"><i class="fa fa-play-circle-o" style="font-size:48px;color:red; margin-left: 50px;"></i></a>
     </div>
     <div class="project-card">
       <img src="city-shop.jpg" alt="Project Image" />
@@ -441,9 +473,9 @@
       </p>
       <p className="project-tech-stack">Tech Stack Used: HTML, CSS, JavaScript, React, TypeScript</p>
       <a className="project-github-link" href="https://github.com/Pravin7038/City-shop" target="_blank"
-        rel="noopener noreferrer">GitHub Repository</a>
+        rel="noopener noreferrer"><i class="fa fa-github" style="font-size:48px;color:red"></i></a>
       <a className="project-deployed-link" href="https://shop-now-eight.vercel.app/" target="_blank"
-        rel="noopener noreferrer">Project Demo</a>
+        rel="noopener noreferrer"><i class="fa fa-play-circle-o" style="font-size:48px;color:red; margin-left: 50px;"></i></a>
     </div>
   </section>
 
