@@ -61,10 +61,11 @@
   #home img {
     background-color: #61604f;
     position: relative;
-    animation-name: photo;
-    animation-duration: 4s;
+    /* animation-name: photo;
+    animation-duration: 4s; */
   }
 
+  /* 
   @keyframes photo {
     0% {
       left: 0px;
@@ -90,7 +91,7 @@
       left: 0px;
       top: 0px;
     }
-  }
+  } */
 
   #home h1 {
     font-size: 36px;
@@ -103,14 +104,33 @@
     text-align: center;
     background-color: rgb(6, 24, 28);
     border-top: solid rgb(9, 222, 255);
+    display: flex;
+    justify-content: space-around;
   }
+
+  #about-image {
+
+    width: 30%;
+  }
+
+  #about-details {
+
+    width: 60%;
+
+  }
+
+  #about-details button{
+
+    margin-left: -610px;
+  }
+
 
   #about h2 {
     font-size: 30px;
     color: #caf0f8;
     margin-bottom: 20px;
     font-weight: bold;
-
+    text-align: start;
   }
 
   #user-detail-intro {
@@ -118,7 +138,7 @@
     color: rgb(47, 208, 218);
     margin-bottom: 20px;
     font-weight: bold;
-    text-align: center;
+    text-align: start;
   }
 
   #user-detail-name {
@@ -126,6 +146,7 @@
     color: #caf0f8;
     margin-bottom: 20px;
     font-weight: bold;
+    text-align: start;
   }
 
   #resume-link-2 {
@@ -135,10 +156,12 @@
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
+    
   }
 
   #resume-link-2:hover {
     background-color: #3E8E41;
+    
   }
 
   #skills {
@@ -175,7 +198,7 @@
     color: #caf0f8;
   }
 
-  /* Projects section styles */
+  /* Projects styles */
   #projects {
     background-color: rgb(6, 24, 28);
     padding: 50px;
@@ -217,7 +240,7 @@
     transform: scale(1.2);
   }
 
-  .project-card .project-title{
+  .project-card .project-title {
     font-size: 20px;
     color: #caf0f8;
     margin-bottom: 10px;
@@ -367,16 +390,21 @@
 
   <section id="home">
     <h1>Welcome to My Portfolio</h1>
-    <img class="home-img" src="Pravin-Pawar-Image.png.png" alt="Professional Photo">
+    <!-- <img class="home-img" src="Pravin-Pawar-Image.png.png" alt="Professional Photo"> -->
   </section>
 
   <section id="about" class="about section">
-    <h2>About Me</h2>
-    <p id="user-detail-intro">A highly motivated and passionate Full Stack Web Developer, with a solid foundation in
-      programming concepts and have completed several projects in HTML, CSS, JavaScript, React, MongoDB. Committed to
-      delivering high-quality and user-friendly web applications. Eager to learn from experienced professionals.</p>
-    <p id="user-detail-name">Pravin Pawar</p>
-    <button id="resume-button-2" class="nav-link resume" data-resume="Pravin-Pawar-Resume.pdf">Download Resume</button>
+    <div id="about-img"><img class="home-img" src="Pravin-Pawar-Image.png.png" alt="Professional Photo"></div>
+    <div id="about-details">
+      <h2>About Me</h2>
+      <p id="user-detail-intro">A highly motivated and passionate Full Stack Web Developer, with a solid foundation in
+        programming concepts and have completed several projects in HTML, CSS, JavaScript, React, MongoDB. Committed to
+        delivering high-quality and user-friendly web applications. Eager to learn from experienced professionals.</p>
+      <p id="user-detail-name">Pravin Pawar</p>
+      <button id="resume-button-2" class="nav-link resume" data-resume="Pravin-Pawar-Resume.pdf">Download
+        Resume</button>
+    </div>
+
   </section>
 
   <section id="skills">
@@ -492,7 +520,7 @@
       <li id="contact-linkedin">LinkedIn: <a href="https://www.linkedin.com/in/pravin-pawar-10279a183/" target="_blank"
           rel="noopener noreferrer">Pravin Pawar</a></li>
       <li id="contact-phone">Phone: 7350199360</li>
-      <li id="contact-email">Email: pravin08pawar@example.com</li>
+      <li id="contact-email">Email: pravin08pawar@gmail.com</li>
     </ul>
   </section>
 
