@@ -99,6 +99,15 @@
 
   }
 
+  .auto-type {
+    color: crimson;
+    font-size: xx-large;
+  }
+  .home-div{
+
+    display: flex;
+  }
+
   #about {
     padding: 50px;
     text-align: center;
@@ -119,7 +128,7 @@
 
   }
 
-  #about-details button{
+  #about-details button {
 
     margin-left: -610px;
   }
@@ -156,12 +165,12 @@
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
-    
+
   }
 
   #resume-link-2:hover {
     background-color: #3E8E41;
-    
+
   }
 
   #skills {
@@ -389,8 +398,16 @@
   </nav>
 
   <section id="home">
-    <h1>Welcome to My Portfolio</h1>
-    <!-- <img class="home-img" src="Pravin-Pawar-Image.png.png" alt="Professional Photo"> -->
+    <div style="display: flex; justify-content: space-around; align-items: center; margin-top: 30px;">
+      
+      <div style="width: 50%;"><h2>Hi I am, <br /> <span class="auto-type"></span></h2></div>
+      <div style="width: 50%;">
+        <img class="home-img"
+          src="https://img.freepik.com/free-vector/web-development-concept-with-programmer-ar_107791-17049.jpg"
+          alt="Professional Photo">
+      </div>
+    </div>
+
   </section>
 
   <section id="about" class="about section">
@@ -543,7 +560,15 @@
   </div>
 
 
-
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed(".auto-type", {
+      strings: ["Full Stack Web Developer"],
+      typeSpeed: 250,
+      backSpeed: 250,
+      loop: true,
+    })
+  </script>
 
   <script src="script.js"></script>
 </body>
