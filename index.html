@@ -6,66 +6,163 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
-  body {
-    font-family: cursive;
-    margin: 0;
-    padding: 0;
-    width: "100%";
-    height: "100%";
-    background-color: rgb(9, 19, 21);
+  /* Base styles that apply to all screen sizes
+body {
+  font-family: cursive;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(9, 19, 21);
+} */
+
+  /* Responsive styles for screens up to 600px wide */
+  @media only screen and (max-width: 600px) {
+
+    /* Modify styles as needed for small screens */
+    #nav-menu {
+      padding: 5px;
+    }
+
+    #nav-menu li {
+      width: 20%;
+      margin-right: 5px;
+    }
+
+    #home {
+      padding: 20px;
+    }
+
+    #about {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #about-image {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    #about-details {
+      width: 100%;
+      text-align: center;
+    }
+
+    #about-details button {
+      margin-left: 0;
+    }
+
+    #skills {
+      padding: 20px;
+    }
+
+    .skills-card {
+      width: 100%;
+      margin: 10px 0;
+    }
+
+    #projects {
+      padding: 20px;
+    }
+
+    .project-card {
+      width: 100%;
+      margin: 10px 0;
+    }
+
+    #contact {
+      padding: 20px;
+    }
+
+    #contact li {
+      font-size: 14px;
+    }
+
+    .react-activity-calendar {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      background-color: rgb(6, 24, 28);
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      padding: 20px;
+    }
   }
 
-  #nav-menu {
-    background-color: rgb(9, 19, 21);
-    color: rgb(36, 148, 182);
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    left: 0%;
-    right: 0%;
-    z-index: 10;
-  }
+  /* Responsive styles for screens between 601px and 900px wide */
+  @media (min-width: 601px) and (max-width: 900px) {
 
-  #nav-menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
+    /* Modify styles as needed for medium-sized screens
+    #nav-menu li {
+      width: 15%;
+    }
 
-  #nav-menu li {
-    width: 12%;
-    display: inline-block;
-    align-content: space-between;
-    margin-right: 10px;
-  }
+    #about-details button {
+      margin-left: -400px;
+    } */
 
-  #nav-menu li a {
-    color: #caf0f8;
-    text-decoration: none;
-    padding: 5px;
-    font-weight: bold;
-    font-size: 20px;
-  }
+    body {
+      font-family: cursive;
+      margin: 0;
+      padding: 0;
+      width: "100%";
+      height: "100%";
+      background-color: rgb(9, 19, 21);
+    }
 
-  #nav-menu li a:hover {
-    background-color: #12b8bd;
-  }
+    #nav-menu {
+      background-color: rgb(9, 19, 21);
+      color: rgb(36, 148, 182);
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      left: 0%;
+      right: 0%;
+      z-index: 10;
+    }
 
-  #home {
-    background-color: rgb(6, 24, 28);
-    padding: 50px;
-    text-align: center;
-    color: #caf0f8;
-  }
+    #nav-menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
 
-  #home img {
-    background-color: #61604f;
-    position: relative;
-    /* animation-name: photo;
+    #nav-menu li {
+      width: 12%;
+      display: inline-block;
+      align-content: space-between;
+      margin-right: 10px;
+    }
+
+    #nav-menu li a {
+      color: #caf0f8;
+      text-decoration: none;
+      padding: 5px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    #nav-menu li a:hover {
+      background-color: #12b8bd;
+    }
+
+    #home {
+      background-color: rgb(6, 24, 28);
+      padding: 50px;
+      text-align: center;
+      color: #caf0f8;
+    }
+
+    #home img {
+      background-color: #61604f;
+      position: relative;
+      /* animation-name: photo;
     animation-duration: 4s; */
-  }
+    }
 
-  /* 
+    /* 
   @keyframes photo {
     0% {
       left: 0px;
@@ -93,294 +190,1076 @@
     }
   } */
 
-  #home h1 {
-    font-size: 36px;
-    color: #caf0f8;
+    #home h1 {
+      font-size: 36px;
+      color: #caf0f8;
 
-  }
+    }
 
-  .auto-type {
-    color: crimson;
-    font-size: xx-large;
-  }
-  .home-div{
+    .auto-type {
+      color: crimson;
+      font-size: xx-large;
+    }
 
-    display: flex;
-  }
+    .home-div {
 
-  #about {
-    padding: 50px;
-    text-align: center;
-    background-color: rgb(6, 24, 28);
-    border-top: solid rgb(9, 222, 255);
-    display: flex;
-    justify-content: space-around;
-  }
+      display: flex;
+    }
 
-  #about-image {
+    #about {
+      padding: 50px;
+      text-align: center;
+      background-color: rgb(6, 24, 28);
+      border-top: solid rgb(9, 222, 255);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
 
-    width: 30%;
-  }
+    #about-image {
 
-  #about-details {
+      width: 30%;
+    }
 
-    width: 60%;
+    #about-details {
 
-  }
+      width: 60%;
+    }
 
-  #about-details button {
+    /* #about-details button {
 
     margin-left: -610px;
-  }
+  } */
 
 
-  #about h2 {
-    font-size: 30px;
-    color: #caf0f8;
-    margin-bottom: 20px;
-    font-weight: bold;
-    text-align: start;
-  }
+    #about h2 {
+      font-size: 30px;
+      color: #caf0f8;
+      margin-bottom: 20px;
+      font-weight: bold;
+      text-align: start;
+    }
 
-  #user-detail-intro {
-    font-size: 18px;
-    color: rgb(47, 208, 218);
-    margin-bottom: 20px;
-    font-weight: bold;
-    text-align: start;
-  }
+    #user-detail-intro {
+      font-size: 18px;
+      color: rgb(47, 208, 218);
+      margin-bottom: 20px;
+      font-weight: bold;
+      text-align: start;
+    }
 
-  #user-detail-name {
-    font-size: 30px;
-    color: #caf0f8;
-    margin-bottom: 20px;
-    font-weight: bold;
-    text-align: start;
-  }
+    #user-detail-name {
+      font-size: 30px;
+      color: #caf0f8;
+      margin-bottom: 20px;
+      font-weight: bold;
+      text-align: start;
+    }
 
-  #resume-link-2 {
-    display: inline-block;
-    background-color: #4CAF50;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    #resume-link-2 {
+      display: inline-block;
+      background-color: #4CAF50;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
 
-  }
+    }
 
-  #resume-link-2:hover {
-    background-color: #3E8E41;
+    #resume-link-2:hover {
+      background-color: #3E8E41;
 
-  }
+    }
 
-  #skills {
-    background-color: rgb(6, 24, 28);
-    padding: 50px;
-    text-align: center;
-    border-top: solid rgb(9, 222, 255);
-  }
+    #skills {
+      background-color: rgb(6, 24, 28);
+      padding: 50px;
+      text-align: center;
+      border-top: solid rgb(9, 222, 255);
+    }
 
-  #skills h2 {
-    font-size: 30px;
-    color: #caf0f8;
-    margin-bottom: 20px;
-  }
+    #skills h2 {
+      font-size: 30px;
+      color: #caf0f8;
+      margin-bottom: 20px;
+    }
 
-  .skills-card {
-    display: inline-block;
-    width: 200px;
-    background-color: #2d2b05;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+    .skills-card {
+      display: inline-block;
+      width: 200px;
+      background-color: #2d2b05;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
 
-  .skills-card-img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
-  }
+    .skills-card-img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+    }
 
-  .skills-card-name {
-    font-size: 16px;
-    color: #caf0f8;
-  }
+    .skills-card-name {
+      font-size: 16px;
+      color: #caf0f8;
+    }
 
-  /* Projects styles */
-  #projects {
-    background-color: rgb(6, 24, 28);
-    padding: 50px;
-    text-align: center;
-    border-top: solid rgb(9, 222, 255);
-  }
+    /* Projects styles */
+    #projects {
+      background-color: rgb(6, 24, 28);
+      padding: 50px;
+      text-align: center;
+      border-top: solid rgb(9, 222, 255);
+    }
 
-  #projects h2 {
-    font-size: 30px;
-    color: #caf0f8;
-    margin-bottom: 20px;
-  }
+    #projects h2 {
+      font-size: 30px;
+      color: #caf0f8;
+      margin-bottom: 20px;
+    }
 
-  .project-card {
-    display: inline-block;
-    width: 300px;
-    background-color: #000000;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: #caf0f8;
-  }
+    .project-card {
+      display: inline-block;
+      width: 300px;
+      background-color: #000000;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      color: #caf0f8;
+    }
 
-  .project-card :hover {
-    cursor: pointer;
+    .project-card :hover {
+      cursor: pointer;
 
-  }
+    }
 
-  .project-card img {
-    width: 100%;
-    margin-bottom: 10px;
-    border-radius: 5px;
-  }
+    .project-card img {
+      width: 100%;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
 
-  .project-card img:hover {
-    -ms-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-  }
+    .project-card img:hover {
+      -ms-transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
 
-  .project-card .project-title {
-    font-size: 20px;
-    color: #caf0f8;
-    margin-bottom: 10px;
-  }
+    .project-card .project-title {
+      font-size: 20px;
+      color: #caf0f8;
+      margin-bottom: 10px;
+    }
 
-  .project-description {
-    font-size: 16px;
-    color: #caf0f8;
-    margin-bottom: 10px;
-  }
+    .project-description {
+      font-size: 16px;
+      color: #caf0f8;
+      margin-bottom: 10px;
+    }
 
-  .project-tech-stack {
-    font-size: 14px;
-    color: #caf0f8;
-    margin-bottom: 10px;
-  }
+    .project-tech-stack {
+      font-size: 14px;
+      color: #caf0f8;
+      margin-bottom: 10px;
+    }
 
-  .project-github-link,
-  .project-deployed-link {
-    display: block;
-    margin-bottom: 10px;
-    width: 50px;
-    border-top: solid rgb(9, 222, 255);
-  }
+    .project-github-link,
+    .project-deployed-link {
+      display: block;
+      margin-bottom: 10px;
+      width: 50px;
+      border-top: solid rgb(9, 222, 255);
+    }
 
-  /* .project-github-link img{
+    /* .project-github-link img{
 
     width: 100%;
     border: solid red;
   } */
 
-  /* Contact section styles */
-  #contact {
-    background-color: rgb(6, 24, 28);
-    padding: 50px;
-    text-align: center;
-    border-top: solid rgb(9, 222, 255);
+    /* Contact section styles */
+    #contact {
+      background-color: rgb(6, 24, 28);
+      padding: 50px;
+      text-align: center;
+      border-top: solid rgb(9, 222, 255);
+    }
+
+    #contact h2 {
+      font-size: 30px;
+      color: #caf0f8;
+      margin-bottom: 20px;
+
+    }
+
+    #contact ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    #contact li {
+      font-size: 16px;
+      color: #caf0f8;
+      margin-bottom: 10px;
+    }
+
+    #contact li a {
+      color: #caf0f8;
+      text-decoration: none;
+    }
+
+    #contact li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Resume button styles */
+    .nav-link.resume {
+      /* display: inline-block; */
+      background-color: #4CAF50;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    .nav-link.resume:hover {
+      background-color: #3E8E41;
+    }
+
+    /* Home image styles */
+    .home-img {
+      width: 300px;
+      height: 280px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      background-color: #91cc93;
+    }
+
+    h1 {
+      text-align: center;
+      color: #caf0f8;
+    }
+
+    .react-activity-calendar {
+      display: flex;
+      background-color: rgb(6, 24, 28);
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      padding: 20px;
+
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
+    #resume-button-1 {
+
+      border: none;
+      color: #caf0f8;
+      text-decoration: none;
+      padding: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    #resume-button-2 {
+      visibility: hidden;
+      border: none;
+      font-size: 20px;
+      color: #caf0f8;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+      width: 240px;
+    }
   }
 
-  #contact h2 {
-    font-size: 30px;
-    color: #caf0f8;
-    margin-bottom: 20px;
+  /* Responsive styles for screens between 901px and 1200px wide */
+  @media (min-width: 901px) and (max-width: 1200px) {
 
+    /* Modify styles as needed for larger screens
+    #nav-menu li {
+      width: 10%;
+    }
+
+    #about-details button {
+      margin-left: -200px;
+    } */
+
+    body {
+      font-family: cursive;
+      margin: 0;
+      padding: 0;
+      width: "100%";
+      height: "100%";
+      background-color: rgb(9, 19, 21);
+    }
+
+    #nav-menu {
+      background-color: rgb(9, 19, 21);
+      color: rgb(36, 148, 182);
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      left: 0%;
+      right: 0%;
+      z-index: 10;
+    }
+
+    #nav-menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    #nav-menu li {
+      width: 12%;
+      display: inline-block;
+      align-content: space-between;
+      margin-right: 10px;
+    }
+
+    #nav-menu li a {
+      color: #caf0f8;
+      text-decoration: none;
+      padding: 5px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    #nav-menu li a:hover {
+      background-color: #12b8bd;
+    }
+
+    #home {
+      background-color: rgb(6, 24, 28);
+      padding: 50px;
+      text-align: center;
+      color: #caf0f8;
+    }
+
+    #home img {
+      background-color: #61604f;
+      position: relative;
+      /* animation-name: photo;
+    animation-duration: 4s; */
+    }
+
+    /* 
+  @keyframes photo {
+    0% {
+      left: 0px;
+      top: 0px;
+    }
+
+    25% {
+      left: 200px;
+      top: 0px;
+    }
+
+    50% {
+      left: 200px;
+      top: 70px;
+    }
+
+    75% {
+      left: 0px;
+      top: 70px;
+    }
+
+    100% {
+      left: 0px;
+      top: 0px;
+    }
+  } */
+
+    #home h1 {
+      font-size: 36px;
+      color: #caf0f8;
+
+    }
+
+    .auto-type {
+      color: crimson;
+      font-size: xx-large;
+    }
+
+    .home-div {
+
+      display: flex;
+    }
+
+    #about {
+      padding: 50px;
+      text-align: center;
+      background-color: rgb(6, 24, 28);
+      border-top: solid rgb(9, 222, 255);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+    }
+
+    #about-image {
+
+      width: 30%;
+    }
+
+    #about-details {
+
+      width: 40%;
+    }
+
+    /* #about-details button {
+
+    margin-left: -610px;
+  } */
+
+
+    #about h2 {
+      font-size: 30px;
+      color: #caf0f8;
+      margin-bottom: 20px;
+      font-weight: bold;
+      text-align: start;
+    }
+
+    #user-detail-intro {
+      font-size: 18px;
+      color: rgb(47, 208, 218);
+      margin-bottom: 20px;
+      font-weight: bold;
+      text-align: start;
+    }
+
+    #user-detail-name {
+      font-size: 30px;
+      color: #caf0f8;
+      margin-bottom: 20px;
+      font-weight: bold;
+      text-align: start;
+    }
+
+    #resume-link-2 {
+      display: inline-block;
+      background-color: #4CAF50;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+
+    }
+
+    #resume-link-2:hover {
+      background-color: #3E8E41;
+
+    }
+
+    #skills {
+      background-color: rgb(6, 24, 28);
+      padding: 50px;
+      text-align: center;
+      border-top: solid rgb(9, 222, 255);
+    }
+
+    #skills h2 {
+      font-size: 30px;
+      color: #caf0f8;
+      margin-bottom: 20px;
+    }
+
+    .skills-card {
+      display: inline-block;
+      width: 200px;
+      background-color: #2d2b05;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .skills-card-img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+    }
+
+    .skills-card-name {
+      font-size: 16px;
+      color: #caf0f8;
+    }
+
+    /* Projects styles */
+    #projects {
+      background-color: rgb(6, 24, 28);
+      padding: 50px;
+      text-align: center;
+      border-top: solid rgb(9, 222, 255);
+    }
+
+    #projects h2 {
+      font-size: 30px;
+      color: #caf0f8;
+      margin-bottom: 20px;
+    }
+
+    .project-card {
+      display: inline-block;
+      width: 300px;
+      background-color: #000000;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      color: #caf0f8;
+    }
+
+    .project-card :hover {
+      cursor: pointer;
+
+    }
+
+    .project-card img {
+      width: 100%;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+
+    .project-card img:hover {
+      -ms-transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+
+    .project-card .project-title {
+      font-size: 20px;
+      color: #caf0f8;
+      margin-bottom: 10px;
+    }
+
+    .project-description {
+      font-size: 16px;
+      color: #caf0f8;
+      margin-bottom: 10px;
+    }
+
+    .project-tech-stack {
+      font-size: 14px;
+      color: #caf0f8;
+      margin-bottom: 10px;
+    }
+
+    .project-github-link,
+    .project-deployed-link {
+      display: block;
+      margin-bottom: 10px;
+      width: 50px;
+      border-top: solid rgb(9, 222, 255);
+    }
+
+    /* .project-github-link img{
+
+    width: 100%;
+    border: solid red;
+  } */
+
+    /* Contact section styles */
+    #contact {
+      background-color: rgb(6, 24, 28);
+      padding: 50px;
+      text-align: center;
+      border-top: solid rgb(9, 222, 255);
+    }
+
+    #contact h2 {
+      font-size: 30px;
+      color: #caf0f8;
+      margin-bottom: 20px;
+
+    }
+
+    #contact ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    #contact li {
+      font-size: 16px;
+      color: #caf0f8;
+      margin-bottom: 10px;
+    }
+
+    #contact li a {
+      color: #caf0f8;
+      text-decoration: none;
+    }
+
+    #contact li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Resume button styles */
+    .nav-link.resume {
+      /* display: inline-block; */
+      background-color: #4CAF50;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    .nav-link.resume:hover {
+      background-color: #3E8E41;
+    }
+
+    /* Home image styles */
+    .home-img {
+      width: 300px;
+      height: 280px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      background-color: #91cc93;
+    }
+
+    h1 {
+      text-align: center;
+      color: #caf0f8;
+    }
+
+    .react-activity-calendar {
+      display: flex;
+      background-color: rgb(6, 24, 28);
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      padding: 20px;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
+    #resume-button-1 {
+
+      border: none;
+      color: #caf0f8;
+      text-decoration: none;
+      padding: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    #resume-button-2 {
+      visibility: hidden;
+      border: none;
+      font-size: 20px;
+      color: #caf0f8;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+      width: 240px;
+    }
   }
 
-  #contact ul {
-    list-style-type: none;
-    padding: 0;
-  }
+  /* Responsive styles for screens larger than 1200px wide */
+  @media (min-width: 1201px) {
 
-  #contact li {
-    font-size: 16px;
-    color: #caf0f8;
-    margin-bottom: 10px;
-  }
+    /* Modify styles as needed for extra-large screens
+    #nav-menu li {
+      width: 12%;
+    }
 
-  #contact li a {
-    color: #caf0f8;
-    text-decoration: none;
-  }
+    #about-details button {
+      margin-left: -610px;
+    } */
+    body {
+      font-family: cursive;
+      margin: 0;
+      padding: 0;
+      width: "100%";
+      height: "100%";
+      background-color: rgb(9, 19, 21);
+    }
 
-  #contact li a:hover {
-    text-decoration: underline;
-  }
+    #nav-menu {
+      background-color: rgb(9, 19, 21);
+      color: rgb(36, 148, 182);
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      left: 0%;
+      right: 0%;
+      z-index: 10;
+    }
 
-  /* Resume button styles */
-  .nav-link.resume {
-    display: inline-block;
-    background-color: #4CAF50;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-  }
+    #nav-menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
 
-  .nav-link.resume:hover {
-    background-color: #3E8E41;
-  }
+    #nav-menu li {
+      width: 12%;
+      display: inline-block;
+      align-content: space-between;
+      margin-right: 10px;
+    }
 
-  /* Home image styles */
-  .home-img {
-    width: 300px;
-    height: 280px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    background-color: #91cc93;
-  }
+    #nav-menu li a {
+      color: #caf0f8;
+      text-decoration: none;
+      padding: 5px;
+      font-weight: bold;
+      font-size: 20px;
+    }
 
-  h1 {
-    text-align: center;
-    color: #caf0f8;
-  }
+    #nav-menu li a:hover {
+      background-color: #12b8bd;
+    }
 
-  .react-activity-calendar {
-    display: flex;
-    background-color: rgb(6, 24, 28);
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    padding: 20px;
+    #home {
+      background-color: rgb(6, 24, 28);
+      padding: 50px;
+      text-align: center;
+      color: #caf0f8;
+    }
 
-  }
+    #home img {
+      background-color: #61604f;
+      position: relative;
+      /* animation-name: photo;
+    animation-duration: 4s; */
+    }
 
-  img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-  }
+    /* 
+  @keyframes photo {
+    0% {
+      left: 0px;
+      top: 0px;
+    }
 
-  #resume-button-1 {
+    25% {
+      left: 200px;
+      top: 0px;
+    }
 
-    border: none;
-    color: #caf0f8;
-    text-decoration: none;
-    padding: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 20px;
-  }
+    50% {
+      left: 200px;
+      top: 70px;
+    }
 
-  #resume-button-2 {
+    75% {
+      left: 0px;
+      top: 70px;
+    }
 
-    border: none;
-    font-size: 24px;
-    color: #caf0f8;
-    text-decoration: none;
-    padding: 10px;
-    font-weight: bold;
-    cursor: pointer;
+    100% {
+      left: 0px;
+      top: 0px;
+    }
+  } */
 
+    #home h1 {
+      font-size: 36px;
+      color: #caf0f8;
+
+    }
+
+    .auto-type {
+      color: crimson;
+      font-size: xx-large;
+    }
+
+    .home-div {
+
+      display: flex;
+    }
+
+    #about {
+      padding: 50px;
+      text-align: center;
+      background-color: rgb(6, 24, 28);
+      border-top: solid rgb(9, 222, 255);
+      display: flex;
+      justify-content: space-around;
+    }
+
+    #about-image {
+
+      width: 30%;
+    }
+
+    #about-details {
+
+      width: 60%;
+    }
+
+    /* #about-details button {
+
+    margin-left: -610px;
+  } */
+
+
+    #about h2 {
+      font-size: 30px;
+      color: #caf0f8;
+      margin-bottom: 20px;
+      font-weight: bold;
+      text-align: start;
+    }
+
+    #user-detail-intro {
+      font-size: 18px;
+      color: rgb(47, 208, 218);
+      margin-bottom: 20px;
+      font-weight: bold;
+      text-align: start;
+    }
+
+    #user-detail-name {
+      font-size: 30px;
+      color: #caf0f8;
+      margin-bottom: 20px;
+      font-weight: bold;
+      text-align: start;
+    }
+
+    #resume-link-2 {
+      display: inline-block;
+      background-color: #4CAF50;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+
+    }
+
+    #resume-link-2:hover {
+      background-color: #3E8E41;
+
+    }
+
+    #skills {
+      background-color: rgb(6, 24, 28);
+      padding: 50px;
+      text-align: center;
+      border-top: solid rgb(9, 222, 255);
+    }
+
+    #skills h2 {
+      font-size: 30px;
+      color: #caf0f8;
+      margin-bottom: 20px;
+    }
+
+    .skills-card {
+      display: inline-block;
+      width: 200px;
+      background-color: #2d2b05;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .skills-card-img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+    }
+
+    .skills-card-name {
+      font-size: 16px;
+      color: #caf0f8;
+    }
+
+    /* Projects styles */
+    #projects {
+      background-color: rgb(6, 24, 28);
+      padding: 50px;
+      text-align: center;
+      border-top: solid rgb(9, 222, 255);
+    }
+
+    #projects h2 {
+      font-size: 30px;
+      color: #caf0f8;
+      margin-bottom: 20px;
+    }
+
+    .project-card {
+      display: inline-block;
+      width: 300px;
+      background-color: #000000;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      color: #caf0f8;
+    }
+
+    .project-card :hover {
+      cursor: pointer;
+
+    }
+
+    .project-card img {
+      width: 100%;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+
+    .project-card img:hover {
+      -ms-transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+
+    .project-card .project-title {
+      font-size: 20px;
+      color: #caf0f8;
+      margin-bottom: 10px;
+    }
+
+    .project-description {
+      font-size: 16px;
+      color: #caf0f8;
+      margin-bottom: 10px;
+    }
+
+    .project-tech-stack {
+      font-size: 14px;
+      color: #caf0f8;
+      margin-bottom: 10px;
+    }
+
+    .project-github-link,
+    .project-deployed-link {
+      display: block;
+      margin-bottom: 10px;
+      width: 50px;
+      border-top: solid rgb(9, 222, 255);
+    }
+
+    /* .project-github-link img{
+
+    width: 100%;
+    border: solid red;
+  } */
+
+    /* Contact section styles */
+    #contact {
+      background-color: rgb(6, 24, 28);
+      padding: 50px;
+      text-align: center;
+      border-top: solid rgb(9, 222, 255);
+    }
+
+    #contact h2 {
+      font-size: 30px;
+      color: #caf0f8;
+      margin-bottom: 20px;
+
+    }
+
+    #contact ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    #contact li {
+      font-size: 16px;
+      color: #caf0f8;
+      margin-bottom: 10px;
+    }
+
+    #contact li a {
+      color: #caf0f8;
+      text-decoration: none;
+    }
+
+    #contact li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Resume button styles */
+    .nav-link.resume {
+      /* display: inline-block; */
+      background-color: #4CAF50;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    .nav-link.resume:hover {
+      background-color: #3E8E41;
+    }
+
+    /* Home image styles */
+    .home-img {
+      width: 300px;
+      height: 280px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      background-color: #91cc93;
+    }
+
+    h1 {
+      text-align: center;
+      color: #caf0f8;
+    }
+
+    .react-activity-calendar {
+      display: flex;
+      background-color: rgb(6, 24, 28);
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      padding: 20px;
+
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
+    #resume-button-1 {
+
+      border: none;
+      color: #caf0f8;
+      text-decoration: none;
+      padding: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    #resume-button-2 {
+
+      border: none;
+      font-size: 20px;
+      color: #caf0f8;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+      width: 240px;
+      display: block;
+    }
   }
 </style>
 
@@ -399,8 +1278,10 @@
 
   <section id="home">
     <div style="display: flex; justify-content: space-around; align-items: center; margin-top: 30px;">
-      
-      <div style="width: 50%;"><h2>Hi I am, <br /> <span class="auto-type"></span></h2></div>
+
+      <div style="width: 50%;">
+        <h2>Hi I am, <br /> <span class="auto-type"></span></h2>
+      </div>
       <div style="width: 50%;">
         <img class="home-img"
           src="https://img.freepik.com/free-vector/web-development-concept-with-programmer-ar_107791-17049.jpg"
@@ -418,7 +1299,7 @@
         programming concepts and have completed several projects in HTML, CSS, JavaScript, React, MongoDB. Committed to
         delivering high-quality and user-friendly web applications. Eager to learn from experienced professionals.</p>
       <p id="user-detail-name">Pravin Pawar</p>
-      <button id="resume-button-2" class="nav-link resume" data-resume="Pravin-Pawar-Resume.pdf">Download
+      <button id="resume-button-2" class="nav-link resume" data-resume="Pravin-Pawar-Resume.pdf"> Download
         Resume</button>
     </div>
 
@@ -546,17 +1427,23 @@
 
   <div class="react-activity-calendar">
 
-    <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com?user=Pravin7038"
-      alt="GitHub Streak Stats">
+    <div>
+      <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com?user=Pravin7038"
+        alt="GitHub Streak Stats">
+    </div>
+
+    <div>
+      <img id="github-top-langs"
+        src="https://github-readme-stats.vercel.app/api/top-langs/?username=Pravin7038&layout=donut"
+        alt="GitHub Top Languages">
+    </div>
 
 
-    <img id="github-top-langs"
-      src="https://github-readme-stats.vercel.app/api/top-langs/?username=Pravin7038&layout=donut"
-      alt="GitHub Top Languages">
+    <div>
+      <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=Pravin7038"
+        alt="GitHub Stats Card">
+    </div>
 
-
-    <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=Pravin7038"
-      alt="GitHub Stats Card">
   </div>
 
 
