@@ -17,7 +17,7 @@ body {
 } */
 
   /* Responsive styles for screens up to 600px wide */
-  @media only screen and (max-width: 600px) {
+  @media (max-width: 600px) {
 
     /* Modify styles as needed for small screens */
     #nav-menu {
@@ -470,14 +470,13 @@ body {
     }
 
     #resume-button-2 {
-      visibility: hidden;
       border: none;
       font-size: 20px;
       color: #caf0f8;
       text-decoration: none;
       font-weight: bold;
       cursor: pointer;
-      width: 240px;
+      display: block;
     }
   }
 
@@ -862,14 +861,13 @@ body {
     }
 
     #resume-button-2 {
-      visibility: hidden;
       border: none;
       font-size: 20px;
       color: #caf0f8;
       text-decoration: none;
       font-weight: bold;
       cursor: pointer;
-      width: 240px;
+      display: block;
     }
   }
 
@@ -1239,25 +1237,23 @@ body {
     }
 
     #resume-button-1 {
-
       border: none;
       color: #caf0f8;
       text-decoration: none;
       padding: 5px;
       font-weight: bold;
       cursor: pointer;
-      font-size: 20px;
+      font-size: 18px;
+      padding: 10px;
     }
 
     #resume-button-2 {
-
       border: none;
       font-size: 20px;
       color: #caf0f8;
       text-decoration: none;
       font-weight: bold;
       cursor: pointer;
-      width: 240px;
       display: block;
     }
   }
@@ -1299,8 +1295,7 @@ body {
         programming concepts and have completed several projects in HTML, CSS, JavaScript, React, MongoDB. Committed to
         delivering high-quality and user-friendly web applications. Eager to learn from experienced professionals.</p>
       <p id="user-detail-name">Pravin Pawar</p>
-      <button id="resume-button-2" class="nav-link resume" data-resume="Pravin-Pawar-Resume.pdf"> Download
-        Resume</button>
+      <button id="resume-button-2" class="nav-link resume" data-resume="Pravin-Pawar-Resume.pdf">Resume</button>
     </div>
 
   </section>
@@ -1352,6 +1347,18 @@ body {
 
   <section id="projects">
     <h2>Projects</h2>
+    <div class="project-card">
+      <img src="https://user-images.githubusercontent.com/123942835/263655352-7d6161aa-1ea1-40b4-8d87-a2155dfb5c3c.png" alt="Project Image" />
+      <h3 className="project-title">FitQuest.com</h3>
+      <p className="project-description">FitQuest is a fitness application that aims to help manage user's calories by providing various exercises with calculated burned calories and helpful tips to help improve their health.
+      </p>
+      <p className="project-tech-stack">Tech Stack Used: HTML, CSS, JavaScript, React,Redux, Node.js, Express.js, MongoDB</p>
+      <a className="project-github-link" href="https://github.com/Pravin7038/FitQuest.com" target="_blank"
+        rel="noopener noreferrer"><i class="fa fa-github" style="font-size:48px;color:red"></i></a>
+      <a className="project-deployed-link" href="https://frontend-blush-six.vercel.app/" target="_blank"
+        rel="noopener noreferrer"><i class="fa fa-play-circle-o"
+          style="font-size:48px;color:red; margin-left: 50px;"></i></a>
+    </div>
     <div class="project-card">
       <img src="https://user-images.githubusercontent.com/115461514/221498510-9df35a9c-0406-4010-b004-72d002460102.jpeg"
         alt="Project Image" />
@@ -1411,15 +1418,20 @@ body {
 
 
   <section id="contact">
-    <h2>Contact Me</h2>
-    <ul>
-      <li id="contact-github">GitHub: <a href="https://github.com/Pravin7038" target="_blank"
-          rel="noopener noreferrer">Pravin7038</a></li>
-      <li id="contact-linkedin">LinkedIn: <a href="https://www.linkedin.com/in/pravin-pawar-10279a183/" target="_blank"
-          rel="noopener noreferrer">Pravin Pawar</a></li>
-      <li id="contact-phone">Phone: 7350199360</li>
-      <li id="contact-email">Email: pravin08pawar@gmail.com</li>
-    </ul>
+    <div style="text-align: left; width: 28%; margin: auto;">
+      <h2>Contact Me</h2>
+    </div>
+    <div style="text-align: left; width: 28%; margin: auto;">
+      <ul>
+        <li id="contact-github">GitHub: <a href="https://github.com/Pravin7038" target="_blank"
+            rel="noopener noreferrer">Pravin7038</a></li>
+        <li id="contact-linkedin">LinkedIn: <a href="https://www.linkedin.com/in/pravin-pawar-ba0989294/" target="_blank"
+            rel="noopener noreferrer">Pravin Pawar</a></li>
+        <li id="contact-phone">Phone: 7350199360</li>
+        <li id="contact-email">Email: pravin08pawar@gmail.com</li>
+      </ul>
+    </div>
+    
   </section>
 
 
@@ -1451,8 +1463,8 @@ body {
   <script>
     var typed = new Typed(".auto-type", {
       strings: ["Full Stack Web Developer"],
-      typeSpeed: 250,
-      backSpeed: 250,
+      typeSpeed: 100,
+      backSpeed: 100,
       loop: true,
     })
   </script>
